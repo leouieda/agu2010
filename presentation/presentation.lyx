@@ -1,0 +1,3389 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\usetheme{default} 
+%\usetheme{Madrid} 
+%\usetheme{Rochester}
+%\usepackage{avant}
+%\usepackage{helvet}
+
+\setbeamercolor{normal text}{fg=white,bg=black} 
+%\setbeamercolor{structure}{fg=white}
+%\setbeamercolor{title}{fg=white}
+%\setbeamercolor{normal text}{fg=black,bg=white}
+%\setbeamercolor{structure}{fg=black}
+\xdefinecolor{mycolor}{rgb}{0.96,1.00,0.49}
+\setbeamercolor{structure}{fg=mycolor}
+\usefonttheme{structurebold}
+
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{blackboard.jpg}}
+
+\usepackage{color}
+\definecolor{my_yellow}{rgb}{0.96,1.00,0.49}
+\end_preamble
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman utopia
+\font_sans helvet
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Computation of the gravity gradient tensor
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[0.2cm]
+\end_layout
+
+\end_inset
+
+ due to topographic masses
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[0.2cm]
+\end_layout
+
+\end_inset
+
+ using tesseroids
+\end_layout
+
+\begin_layout Author
+Leonardo Uieda 
+\begin_inset Formula $^{1}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[0.2cm]
+\end_layout
+
+\end_inset
+
+ Naomi Ussami 
+\begin_inset Formula $^{2}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[0.2cm]
+\end_layout
+
+\end_inset
+
+ Carla F Braitenberg 
+\begin_inset Formula $^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Institute
+1.
+ Observatorio Nacional, Rio de Janeiro, Brazil
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+2.
+ Universidade de São Paulo, São Paulo, Brazil
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+3.
+ University of Trieste, Trieste, Italy.
+\end_layout
+
+\begin_layout Date
+August 9, 2010
+\end_layout
+
+\begin_layout BeginFrame
+Outline
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+The Gravity Gradient Tensor (GGT)
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+color{my_yellow}Gravity Gradient Tensor}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Gravity Gradient Tensor
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Hessian matrix of gravitational potential
+\size default
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Uncover
+
+\lang brazilian
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<2->
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula \[
+GGT=\begin{pmatrix}g_{xx} & g_{xy} & g_{xz}\\
+g_{yx} & g_{yy} & g_{yz}\\
+g_{zx} & g_{zy} & g_{zz}\end{pmatrix}=\begin{pmatrix}\dfrac{\partial^{2}V}{\partial x^{2}} & \dfrac{\partial^{2}V}{\partial x\partial y} & \dfrac{\partial^{2}V}{\partial x\partial z}\\[4mm]
+\dfrac{\partial^{2}V}{\partial y\partial x} & \dfrac{\partial^{2}V}{\partial y^{2}} & \dfrac{\partial^{2}V}{\partial y\partial z}\\[4mm]
+\dfrac{\partial^{2}V}{\partial z\partial x} & \dfrac{\partial^{2}V}{\partial z\partial y} & \dfrac{\partial^{2}V}{\partial z^{2}}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Volume integrals
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Uncover
+
+\lang brazilian
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<4->
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula \[
+g_{ij}(x,y,z)=\int_{\Omega}Kernel(x,y,z,x',y',z')\ d\Omega\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Gravity Gradient Tensor
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Can discretize volume 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ using: 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Rectangular prisms
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Tesseroids (spherical prisms)
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+What is a tesseroid
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+color{my_yellow}What is a 
+\backslash
+textbf{
+\backslash
+textit{tesseroid}}?}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+What is a tesseroid?
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename whay_is_a_tesseroid.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+What is a tesseroid?
+\end_layout
+
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+3 cm
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Delimited by: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+2 meridians 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+2 parallels
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<5->
+\end_layout
+
+\end_inset
+
+2 concentric spheres
+\end_layout
+
+\begin_layout Column
+9 cm
+\end_layout
+
+\begin_layout Overprint
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<1>
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename whay_is_a_tesseroid_meridians1.pdf
+	lyxscale 50
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<2>
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename whay_is_a_tesseroid_meridians2.pdf
+	lyxscale 50
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<3>
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename whay_is_a_tesseroid_parallels1.pdf
+	lyxscale 50
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<4>
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename whay_is_a_tesseroid_parallels2.pdf
+	lyxscale 50
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<5>
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename whay_is_a_tesseroid_sphere1.pdf
+	lyxscale 50
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<6>
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename whay_is_a_tesseroid_sphere2.pdf
+	lyxscale 50
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Why use tesseroids
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+color{my_yellow}Why use   
+\backslash
+textbf{
+\backslash
+textit{tesseroids}}?}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Why use tesseroids?
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename why_tess.pdf
+	lyxscale 20
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Why use tesseroids?
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename why_tess2.pdf
+	lyxscale 20
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Why use tesseroids?
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Want to model the geologic body
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 10pt
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename why_tess3.pdf
+	lyxscale 20
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Why use tesseroids?
+\end_layout
+
+\begin_layout Columns
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+4cm
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+Good for small regions 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+(Rule of thumb: < 2500 km)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+and close observation point
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<5->
+\end_layout
+
+\end_inset
+
+Not very accurate for larger regions
+\end_layout
+
+\begin_layout Column
+9cm
+\end_layout
+
+\begin_layout Overprint
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<1>
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename why_tess4.pdf
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<2->
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename why_tess5.pdf
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Why use tesseroids?
+\end_layout
+
+\begin_layout Columns
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+4cm
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+Usually accurate enough (if mass of prisms = mass of tesseroids)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<5->
+\end_layout
+
+\end_inset
+
+Involves many coordinate changes
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<6->
+\end_layout
+
+\end_inset
+
+Computationally slow
+\end_layout
+
+\begin_layout Column
+9cm
+\end_layout
+
+\begin_layout Overprint
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<1>
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename why_tess-spherical.pdf
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<2>
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename why_tess7.pdf
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<3->
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename why_tess7-zoom.pdf
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Why use tesseroids?
+\end_layout
+
+\begin_layout Columns
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+4cm
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+As accurate as Spherical Earth + rectangular prisms
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<5->
+\end_layout
+
+\end_inset
+
+But faster
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<6->
+\end_layout
+
+\end_inset
+
+As shown in Wild-Pfeiffer (2008)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<7->
+\end_layout
+
+\end_inset
+
+Some numerical problems
+\end_layout
+
+\begin_layout Column
+9cm
+\end_layout
+
+\begin_layout Overprint
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<1>
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename why_tess-spherical.pdf
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<2>
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename why_tess8.pdf
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<3->
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename why_tess8-zoom.pdf
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Numerical issues
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+color{my_yellow}Numerical issues}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Numerical issues
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+
+\series bold
+\size larger
+G
+\series default
+ravity 
+\series bold
+G
+\series default
+radient 
+\series bold
+T
+\series default
+ensor (GGT) volume integrals solved: 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Analytically in the radial direction
+\size default
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Numerically over the surface of the sphere 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Using the 
+\series bold
+G
+\series default
+auss-
+\series bold
+L
+\series default
+egendre 
+\series bold
+Q
+\series default
+uadrature (GLQ)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Numerical issues
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+At 250 km height with 
+\series bold
+G
+\series default
+auss-
+\series bold
+L
+\series default
+egendre 
+\series bold
+Q
+\series default
+uadrature
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+ (GLQ) order 2
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ggt-h250-o2.png
+	lyxscale 10
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Numerical issues
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+At 50 km height with 
+\series bold
+G
+\series default
+auss-
+\series bold
+L
+\series default
+egendre 
+\series bold
+Q
+\series default
+uadrature
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+ (GLQ) order 2
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ggt-h50-o2.png
+	lyxscale 10
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Numerical issues
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+At 50 km height with 
+\series bold
+G
+\series default
+auss-
+\series bold
+L
+\series default
+egendre 
+\series bold
+Q
+\series default
+uadrature
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+ (GLQ) order 10
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ggt-h50-o10.png
+	lyxscale 10
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Numerical issues
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+
+\size larger
+General rule: 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Distance to computation point > Distance between nodes
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Increase number of nodes
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Divide the tesseroid in smaller parts
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Modeling topography with tesseroids
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+color{my_yellow}Modeling  topography
+\backslash
+
+\backslash
+[10pt] with tesseroids}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Modeling topography with tesseroids
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+Computer program:
+\size default
+ 
+\shape italic
+\size larger
+Tesseroids
+\shape default
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Python programming language
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Open Source (GNU GPL License) 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Project hosted on Google Code
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<5->
+\end_layout
+
+\end_inset
+
+
+\size larger
+http://code.google.com/p/tesseroids 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<6->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Under development:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<7->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Optimizations using C coded modules
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Modeling topography with tesseroids
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+To model topography:
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+
+\series bold
+\size larger
+D
+\series default
+igital 
+\series bold
+E
+\series default
+levation 
+\series bold
+M
+\series default
+odel (DEM) 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ Tesseroid model
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+
+\size larger
+1 Grid Point = 1 Tesseroid
+\size default
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Top centered on grid point
+\size default
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<5->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Bottom at reference surface
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Topographic effect in the Paraná Basin region
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+color{my_yellow}Topographic effect in the 
+\backslash
+
+\backslash
+[10pt]Paraná Basin region}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Topographic effect in the Paraná Basin region
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size larger
+D
+\series default
+igital 
+\series bold
+E
+\series default
+levation 
+\series bold
+M
+\series default
+odel (DEM) Grid: 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+
+\size larger
+ETOPO1 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+
+\size larger
+10' x 10' Grid 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+
+\size larger
+~ 23,000 Tesseroids 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<5->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Density = 
+\begin_inset Formula $2.67\ g\times cm^{-3}$
+\end_inset
+
+
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<6->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Computation height = 250 km
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Topographic effect in the Paraná Basin region
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size larger
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\size larger
+\begin_inset Graphics
+	filename topo-map.pdf
+	lyxscale 50
+	scale 42
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Topographic effect in the Paraná Basin region
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Height of 250 km
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size larger
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\size larger
+\begin_inset Graphics
+	filename ggt-topo.png
+	lyxscale 10
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Topographic effect in the Paraná Basin region
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Topographic effect in the region has the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[5pt]
+\end_layout
+
+\end_inset
+
+same order of magnitude as a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[5pt]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $2^{\circ}\times2^{\circ}\times10\ km$
+\end_inset
+
+ tesseroid (
+\begin_inset Formula $10^{0}$
+\end_inset
+
+ Eötvös) 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Need to take topography into account when
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[5pt]
+\end_layout
+
+\end_inset
+
+ modeling (even at 250 km altitudes) 
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Further applications
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+color{my_yellow}Further applications}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Further applications
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Satellite gravity data = global coverage
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+
+\size larger
++ Tesseroid modeling: 
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Regional/global inversion for density (Mantle)
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Regional/global inversion for relief of an interface (Moho)
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<5->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Joint inversion with seismic tomography
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Concluding remarks
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+color{my_yellow}Concluding remarks}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Concluding remarks
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Developed a computational tool for large-scale gravity modeling with tesseroids
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Better use tesseroids than rectangular prisms for large regions
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Take topographic effect into consideration when modeling density anomalies
+ within the Earth
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+
+\size larger
+Possible application: tesseroids in regional/global gravity inversion
+\size default
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[20pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+color{my_yellow}Thank you}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+References
+\end_layout
+
+\begin_layout Itemize
+WILD-PFEIFFER, F.
+ A comparison of diﬀerent mass elements for use in gravity gradiometry.
+ Journal of Geodesy, v.
+ 82 (10), p.
+ 637 - 653, 2008.
+ 
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document

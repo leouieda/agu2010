@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1142.8496"
+   height="937.30652"
+   id="svg25086"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="why_tess2.svg">
+  <defs
+     id="defs25088">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective25094" />
+    <inkscape:perspective
+       id="perspective25104"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective25147"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4611"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       style="overflow:visible"
+       id="Arrow2MendL"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2MendL">
+      <path
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round"
+         id="path4484" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="708.92903"
+     inkscape:cy="446.40045"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="747"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata25091">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(779.6391,25.219635)">
+    <path
+       inkscape:export-ydpi="250"
+       inkscape:export-xdpi="250"
+       inkscape:export-filename="/home/leo/doc/graduacao/agu/seminario/why_tess.png"
+       sodipodi:end="12.549287"
+       sodipodi:start="6.2686173"
+       transform="matrix(1.044709,0,0,1.044709,-267.92762,-201.01362)"
+       d="M 591.90415,629.96943 C 595.33378,865.37481 407.28029,1058.9889 171.87492,1062.4185 -63.530453,1065.8481 -257.14448,877.7946 -260.57411,642.38922 -264.00374,406.98383 -75.950241,213.36979 159.45513,209.94016 394.44187,206.51663 587.87253,393.9198 591.88718,628.8972"
+       sodipodi:ry="426.28439"
+       sodipodi:rx="426.28436"
+       sodipodi:cy="636.17932"
+       sodipodi:cx="165.66502"
+       id="path24834-81-7"
+       style="opacity:0.98999999;fill:#cccccc;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc"
+       sodipodi:open="true" />
+    <path
+       inkscape:export-ydpi="250"
+       inkscape:export-xdpi="250"
+       inkscape:export-filename="/home/leo/doc/graduacao/agu/seminario/why_tess.png"
+       sodipodi:end="12.549287"
+       sodipodi:start="6.2686173"
+       transform="translate(-260.52092,-172.57068)"
+       d="M 591.90415,629.96943 C 595.33378,865.37481 407.28029,1058.9889 171.87492,1062.4185 -63.530453,1065.8481 -257.14448,877.7946 -260.57411,642.38922 -264.00374,406.98383 -75.950241,213.36979 159.45513,209.94016 394.44187,206.51663 587.87253,393.9198 591.88718,628.8972"
+       sodipodi:ry="426.28439"
+       sodipodi:rx="426.28436"
+       sodipodi:cy="636.17932"
+       sodipodi:cx="165.66502"
+       id="path24834-81"
+       style="opacity:0.98999999;fill:#ffdd55;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc"
+       sodipodi:open="true" />
+    <path
+       inkscape:export-ydpi="250"
+       inkscape:export-xdpi="250"
+       inkscape:export-filename="/home/leo/doc/graduacao/agu/seminario/why_tess.png"
+       sodipodi:end="11.065204"
+       sodipodi:start="4.7863891"
+       transform="matrix(0.51582739,0,0,0.51582739,-180.31042,135.45033)"
+       d="M 197.18134,211.06157 C 431.96737,228.46755 608.18873,432.90958 590.78275,667.69564 573.37677,902.48169 368.93475,1078.7031 134.14871,1061.2971 -100.63732,1043.8911 -276.85868,839.44906 -259.4527,604.66301 -242.10049,370.6022 -38.811293,194.59878 195.3231,210.92789"
+       sodipodi:ry="426.28439"
+       sodipodi:rx="426.28436"
+       sodipodi:cy="636.17932"
+       sodipodi:cx="165.66502"
+       id="path24834-8-6"
+       style="opacity:0.98999999;fill:#aa0000;stroke:#000000;stroke-width:11.63179779;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc"
+       sodipodi:open="true" />
+    <text
+       inkscape:export-ydpi="250"
+       inkscape:export-xdpi="250"
+       inkscape:export-filename="/home/leo/doc/graduacao/agu/seminario/why_tess.png"
+       id="text24954"
+       y="35.561615"
+       x="-786.98285"
+       style="font-size:80px;font-style:normal;font-weight:bold;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Andale Mono Bold"
+       xml:space="preserve"><tspan
+         y="35.561615"
+         x="-786.98285"
+         id="tspan24956"
+         sodipodi:role="line">Earth</tspan></text>
+    <path
+       inkscape:export-ydpi="250"
+       inkscape:export-xdpi="250"
+       inkscape:export-filename="/home/leo/doc/graduacao/agu/seminario/why_tess.png"
+       sodipodi:open="true"
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#2b0000;stroke:#000000;stroke-width:11.63179779;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path24834-8-6-0"
+       sodipodi:cx="165.66502"
+       sodipodi:cy="636.17932"
+       sodipodi:rx="426.28436"
+       sodipodi:ry="426.28439"
+       d="M 197.18134,211.06157 C 431.96737,228.46755 608.18873,432.90958 590.78275,667.69564 573.37677,902.48169 368.93475,1078.7031 134.14871,1061.2971 -100.63732,1043.8911 -276.85868,839.44906 -259.4527,604.66301 -242.10049,370.6022 -38.811293,194.59878 195.3231,210.92789"
+       transform="matrix(0.27504756,0,0,0.27504756,-140.42162,288.62878)"
+       sodipodi:start="4.7863891"
+       sodipodi:end="11.065204" />
+    <path
+       id="path2869"
+       d="m -634.76269,66.372587 148.57147,82.857153"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:9.39999962;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2MendL)" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:bold;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Andale Mono Bold"
+       x="-159.17229"
+       y="780.65833"
+       id="text4522"><tspan
+         sodipodi:role="line"
+         id="tspan4524"
+         x="-159.17229"
+         y="780.65833"
+         style="font-size:40px;font-weight:bold;fill:#000000;-inkscape-font-specification:Andale Mono Bold">Matle</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:bold;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Andale Mono Bold"
+       x="-146.76994"
+       y="478.16916"
+       id="text4526"><tspan
+         sodipodi:role="line"
+         id="tspan4528"
+         x="-146.76994"
+         y="478.16916"
+         style="font-size:40px;font-weight:bold;fill:#ffffff;-inkscape-font-specification:Andale Mono Bold">Core</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="243.52303"
+       y="786.37262"
+       id="text4530"><tspan
+         sodipodi:role="line"
+         id="tspan4532"
+         x="243.52303"
+         y="786.37262"
+         style="font-size:40px;font-weight:bold;fill:#ffffff;-inkscape-font-specification:Andale Mono Bold">Crust</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:none;stroke:#00ff00;stroke-width:11.25415421;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:33.76246369, 33.76246369;stroke-dashoffset:0"
+       id="path24834-7"
+       sodipodi:cx="165.66502"
+       sodipodi:cy="636.17932"
+       sodipodi:rx="426.28436"
+       sodipodi:ry="426.28439"
+       d="m 197.18134,211.06157 c 219.80307,16.29521 390.94058,197.46129 394.70584,417.83542 l -426.22216,7.28233 z"
+       transform="matrix(1.0728204,0,0,1.0728204,-279.21588,-206.39218)"
+       sodipodi:start="4.7863891"
+       sodipodi:end="6.2661012" />
+  </g>
+</svg>

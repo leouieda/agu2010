@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="713.09631"
+   height="670.26117"
+   id="svg25207"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="why_tess3.svg">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="401.14233"
+     inkscape:cy="381.2928"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="747"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       orientation="0,1"
+       position="840.44691,-6.0609083"
+       id="guide2840" />
+  </sodipodi:namedview>
+  <defs
+     id="defs25209">
+    <marker
+       style="overflow:visible"
+       id="Arrow2Mend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         id="path3636" />
+    </marker>
+    <inkscape:perspective
+       id="perspective25215"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective25225" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective25247" />
+    <marker
+       style="overflow:visible"
+       id="Arrow2MendN"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2MendN">
+      <path
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="font-size:12px;fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round"
+         id="path4062" />
+    </marker>
+    <inkscape:perspective
+       id="perspective2868"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <metadata
+     id="metadata25212">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1"
+     transform="translate(-306.74606,-17.660084)">
+    <path
+       sodipodi:end="6.2661012"
+       sodipodi:start="4.7863891"
+       transform="translate(144.08104,48.741535)"
+       d="m 197.18134,211.06157 c 219.80307,16.29521 390.94058,197.46129 394.70584,417.83542 l -426.22216,7.28233 z"
+       sodipodi:ry="426.28439"
+       sodipodi:rx="426.28436"
+       sodipodi:cy="636.17932"
+       sodipodi:cx="165.66502"
+       id="path24834"
+       style="opacity:0.98999999;fill:#ffdd55;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:nodetypes="ccscccccc"
+       id="path24814"
+       d="m 413.22025,272.9395 c 2.85714,18.57143 40.11022,17.33973 56.1327,49.0765 0,0 15.71429,20.00001 35.71429,30.00001 20,9.99999 44.28571,14.2857 59.99999,32.85713 56.70664,50.55412 41.70516,-0.70252 75.71429,90 12.70184,32.65849 18.14162,53.42742 35.71429,65.71428 24.11131,27.08213 -0.35121,59.87831 37.14286,82.85715 l 18.83139,29.64286 C 712.18205,439.31825 564.75561,317.07524 413.22025,272.9395 z"
+       style="fill:#b3b3b3;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       sodipodi:end="6.2657797"
+       sodipodi:start="4.7863891"
+       transform="matrix(0.41431648,0,0,0.41431648,240.51794,421.93206)"
+       d="M 197.18134,211.06157 C 416.932,227.35289 588.04962,408.4396 591.88482,628.75996 l -426.2198,7.41936 z"
+       sodipodi:ry="426.28439"
+       sodipodi:rx="426.28436"
+       sodipodi:cy="636.17932"
+       sodipodi:cx="165.66502"
+       id="path24834-8"
+       style="opacity:0.98999999;fill:#aa0000;stroke:#000000;stroke-width:11.63179779;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:end="6.2657797"
+       sodipodi:start="4.7863891"
+       transform="matrix(0.24820772,0,0,0.24820772,268.27944,527.13524)"
+       d="M 197.18134,211.06157 C 416.932,227.35289 588.04962,408.4396 591.88482,628.75996 l -426.2198,7.41936 z"
+       sodipodi:ry="426.28439"
+       sodipodi:rx="426.28436"
+       sodipodi:cy="636.17932"
+       sodipodi:cx="165.66502"
+       id="path24834-8-2"
+       style="opacity:0.98999999;fill:#550000;stroke:#000000;stroke-width:11.63179779;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc" />
+    <path
+       transform="translate(58.588848,12.121831)"
+       d="m 723.26925,241.20969 c 0,3.90524 -3.16583,7.07106 -7.07107,7.07106 -3.90524,0 -7.07107,-3.16582 -7.07107,-7.07106 0,-3.90525 3.16583,-7.07107 7.07107,-7.07107 3.90524,0 7.07107,3.16582 7.07107,7.07107 z"
+       sodipodi:ry="7.0710678"
+       sodipodi:rx="7.0710678"
+       sodipodi:cy="241.20969"
+       sodipodi:cx="716.19818"
+       id="path2820"
+       style="opacity:0.98999999;fill:#ffffff;stroke:#ffffff;stroke-width:5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc" />
+    <text
+       id="text2822"
+       y="248.28075"
+       x="802.06116"
+       style="font-size:32px;font-style:normal;font-weight:bold;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Andale Mono Bold"
+       xml:space="preserve"><tspan
+         y="248.28075"
+         x="802.06116"
+         id="tspan2824"
+         sodipodi:role="line">Observation</tspan><tspan
+         id="tspan2826"
+         y="288.28076"
+         x="802.06116"
+         sodipodi:role="line">Point</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:56px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="303.05466"
+       y="60.206959"
+       id="text2852"><tspan
+         sodipodi:role="line"
+         x="303.05466"
+         y="60.206959"
+         id="tspan2882">Spherical Earth</tspan></text>
+  </g>
+</svg>
