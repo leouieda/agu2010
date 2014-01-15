@@ -4,9 +4,15 @@ of the Americas in Foz do Iguaçu, Brazil.
 Slides in PDF format available on figshare:
 [doi:10.6084/m9.figshare.156858](http://dx.doi.org/10.6084/m9.figshare.156858)
 
+Citation:
+
+    Uieda, L., N. Ussami, and C. F. Braitenberg (2010), Computation of the
+    gravity gradient tensor due to topographic masses using tesseroids, Eos
+    Trans. AGU, Meet. Am. Suppl., vol. 91, Abstract G22A-04
+
 # Computation of the gravity gradient tensor due to topographic masses using tesseroids
 
-*Leonardo Uieda, Naomi Ussami, and Carla Braitenberg*
+**Leonardo Uieda, Naomi Ussami, and Carla Braitenberg**
 
 The GOCE satellite mission has the objective of measuring the Earth's
 gravitational field with an unprecedented accuracy through the measurement of
@@ -34,7 +40,7 @@ results indicate that the GGT due to topographic masses may have amplitudes of
 the same order of magnitude as the GGT due to density anomalies within  the
 crust and mantle.
 
-*References*
+**References**
 
 Amante, C., Eakins, B.W., 2009. ETOPO1 1 Arc-Minute Global Relief Model:
 Procedures, Data Sources and Analysis. NOAA Technical Memorandum NESDIS
