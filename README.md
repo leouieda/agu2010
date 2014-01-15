@@ -6,9 +6,9 @@ Slides in PDF format available on figshare:
 
 Citation:
 
-    Uieda, L., N. Ussami, and C. F. Braitenberg (2010), Computation of the
-    gravity gradient tensor due to topographic masses using tesseroids, Eos
-    Trans. AGU, Meet. Am. Suppl., vol. 91, Abstract G22A-04
+Uieda, L., N. Ussami, and C. F. Braitenberg (2010), Computation of the
+gravity gradient tensor due to topographic masses using tesseroids, Eos
+Trans. AGU, Meet. Am. Suppl., vol. 91, Abstract G22A-04
 
 # Computation of the gravity gradient tensor due to topographic masses using tesseroids
 
